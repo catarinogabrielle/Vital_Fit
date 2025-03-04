@@ -14,10 +14,10 @@
   align-items: center;
   width: 100%;
   max-width: 700px;
+}
 
-  h1 {
-    font-size: 28px;
-    color: #fff;
-    font-weight: 600;
-  }
+.header h1 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
 }

@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import InstallButton from '@/components/InstallButton/InstallButton'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
+        <InstallButton />
         <div className={styles.box_card}>
           {[
             { title: 'Desafio dos 30 Dias', href: '/desafio' },

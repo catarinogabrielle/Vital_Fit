@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import BottomNav from '@/components/BottomNav/BottomNav';
@@ -7,12 +7,12 @@ import HeaderNav from '@/components/HeaderNav/HeaderNav';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
   title: "Vital Fit",
@@ -20,24 +20,28 @@ export const metadata: Metadata = {
   generator: "Next.Js",
   manifest: "/manifest.json",
   keywords: ["nextjs", "next15", "pwa", "next-pwa"],
-  themeColor: [{ media: "(prefers-colo-scheme: dark)", color: "#2ECC71" }],
-  viewport:
-    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
   icons: [
     { rel: "apple-touch-icon", url: "icons/vitalfit-512.png" },
     { rel: "icon", url: "icons/vitalfit-512.png" },
   ]
-};
+}
+
+export const generateViewport = (): Viewport => ({
+  themeColor: "#2ECC71",
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  viewportFit: "cover",
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <head>
-        <meta name="theme-color" content="#2ECC71" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="icons/vitalfit-512.png" />
         <link rel="apple-touch-icon" href="icons/vitalfit-512.png" />
@@ -61,5 +65,5 @@ export default function RootLayout({
         </nav>
       </body>
     </html>
-  );
+  )
 }
