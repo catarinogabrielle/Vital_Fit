@@ -1,0 +1,27 @@
+{
+    "name": "Vital Fit",
+    "short_name": "",
+    "theme_color": "#2ECC71",
+    "background_color": "#2ECC71",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "icons/vitalfit-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icons/vitalfit-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "icons/vitalfit-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
