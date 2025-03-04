@@ -33,6 +33,10 @@
 }
 
 @media screen and (max-width: 580px) {
+  .content {
+    justify-content: space-around;
+  }
+
   .link h1 {
     display: none;
   }
