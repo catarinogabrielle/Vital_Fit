@@ -3,11 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url("/back.png");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .content {
@@ -44,8 +39,6 @@
 
 .card:hover {
   scale: 1.04;
-  background-color: #3498db;
-  color: #fff;
 }
 
 @media screen and (max-width: 580px) {
@@ -56,7 +49,5 @@
   .card {
     width: 90%;
     margin: 10px 0;
-    background-color: #3498db;
-    color: #fff;
   }
 }

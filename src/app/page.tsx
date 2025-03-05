@@ -9,12 +9,12 @@ export default function Home() {
         <InstallButton />
         <div className={styles.box_card}>
           {[
-            { title: 'Desafio dos 30 Dias', href: '/desafio' },
-            { title: 'Minha Dieta', href: '/dieta' },
-            { title: 'Meus Treinos', href: '/treinos' },
-            { title: 'Receitas', href: '/receitas' },
-            { title: 'Controle de Saúde', href: '/saude' },
-            { title: 'Detox', href: '/detox' },
+            { title: 'Desafio dos 30 Dias', href: '/Challenge' },
+            { title: 'Minha Dieta', href: '/Diet' },
+            { title: 'Meus Treinos', href: '/Workouts' },
+            { title: 'Receitas', href: '/Revenues' },
+            { title: 'Controle de Saúde', href: '/Health' },
+            { title: 'Detox', href: '/Detox' },
           ].map(({ title, href }) => (
             <Link
               key={title}
@@ -27,5 +27,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
